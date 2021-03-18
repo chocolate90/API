@@ -1,6 +1,7 @@
 package collection.list;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayListEx {
@@ -61,6 +62,40 @@ public class ArrayListEx {
 		
 		list.clear();
 		System.out.println(list.toString());
+	
+		// addAll - collection을 통째로 마지막에 추가해 준다.
+		
+		List<String> list2 = new ArrayList<>();
+		
+		list2.add("홍길동");
+		list2.add("이순신");
+		
+		list.addAll(list2);
+		System.out.println(list.toString());
+		
+		// 배열을 리스트로 바꾸는 방법
+		
+		String[] arr = {"박찬호", "이순신"};
+		
+		List<String> list3 = Arrays.asList(arr);
+		System.out.println(list3.toString());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 	
